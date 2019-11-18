@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1D1A21;
+    overflow: initial;
 }
 
 .header {
@@ -19,7 +20,6 @@ body {
 }
 
 .navBarScroll {
-    position: fixed;
     z-index: 10;
     margin-top: -6rem;
     background-color: #880B03;
@@ -29,7 +29,6 @@ body {
 
 .navLogoScroll {
     width: 5%;
-    margin-left: 0%;
 }
 
 .active {
@@ -125,11 +124,56 @@ body {
 .content img {
     width: 50%;
 }
+
+.banner {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    width: 110%;
+}
+
+.media {
+    background-color: white;
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+
+.test img {
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 58%);
+    margin-bottom: -5%;
+}
+
+.twitch img {
+    width: 30%;
+}
+
+.youtube img {
+    width: 50%;
+    margin-right: 100rem;
+}
+
+.teste {
+    width: 300px;
+}
+
+.paiement {
+    margin-left: 8rem;
+}
+
+.paiement img {
+    width: 50%;
+}
+
 .footer {
-    margin-top: 3rem;
-    background-color: #333333;
-    height: 20vh;
-    width: 100%;
+    color: white;
+    background-color: #333;
+    text-align: start;
+    height: 30vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -164,55 +208,68 @@ body {
     text-transform: uppercase;
 }
 
+
 /* ----- Robin ------- */
-  .modal-body {
+
+.modal-body {
     margin: 0 1rem;
-  }
-   .modal-header{
+}
+
+.modal-header {
     background-color: #B0413A;
     color: #fff;
-  }
-  .containerInscription{
+}
+
+.containerInscription {
     display: none;
-  }
-  @media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
     .slideControl {
         display: none;
     }
-  #navLogo {
+    #navLogo {
         display: none;
     }
     .navbar-collapse {
         z-index: 10;
     }
-    .user{
+    .user {
         width: 300px;
         height: 3rem;
         z-index: 10;
     }
-    .header img{
+    .header img {
         width: 20%;
         display: block;
     }
 }
-    .dropdown-menu{
-      background-color: #323538;
-      z-index: 10;
-    }
-    .dropdown-menu li a{
-        text-decoration: underline;
-        color: #fff;
-        margin-left: 10px;
-    }
-    .dropdown-header{
-      color: #fff;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    /* tooltip */
+
+.dropdown-menu {
+    background-color: #323538;
+    z-index: 10;
+}
+
+.dropdown-menu li a {
+    text-decoration: underline;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.dropdown-header {
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0;
+}
 
 
-  /* ---- Odile début ---- */
-  
-  /* ----- Odile fin ----- */
+/* tooltip */
+
+
+/* ---- Odile début ---- */
+
+
+/* ----- Odile fin ----- */
+
+
 }
