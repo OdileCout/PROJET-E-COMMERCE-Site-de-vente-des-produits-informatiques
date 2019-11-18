@@ -183,6 +183,17 @@ a {
     display: flex;
 }
 
+.tableHead {
+    color: red;
+    font-weight: bolder;
+}
+
+.tableHead td {
+    text-align: start;
+    padding-left: 5rem;
+    border-left: solid 1px #333;
+}
+
 .card {
     margin-bottom: 20px;
     margin-left: 1rem;
