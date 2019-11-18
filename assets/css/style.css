@@ -1,84 +1,218 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: #1D1A21;
 }
 
-.header{
+.header {
     height: 6rem;
     background-color: #B0413A;
 }
 
-.logo img{
-    float: right;
-    width: 30%;
+.header img {
+    width: 20%;
+    display: none;
 }
-.active{
+
+.navLogo {
+    margin-left: 5%;
+}
+
+.navBarScroll {
+    position: fixed;
+    z-index: 10;
+    margin-top: -6rem;
+    background-color: #880B03;
+    width: 100%;
+    height: 3rem;
+}
+
+.navLogoScroll {
+    width: 5%;
+    margin-left: 0%;
+}
+
+.active {
     background-color: #A32B09;
     border-top-left-radius: 0.5rem;
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0% 100%);
 }
-.navGrey{
+
+.navGrey {
     background-color: #323538;
-    border-right: 1px solid white;
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 35% 100%);
+    margin-left: -6.2rem;
 }
-.navBar{
+
+.basket {
+    color: white;
+    text-decoration: none;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+}
+
+.basket a {
+    color: white;
+    text-decoration: none;
+}
+
+.navGrey img {
+    width: 20%;
+}
+
+.navBar {
     background-color: #880B03;
     width: 100%;
     height: 3rem;
     position: initial;
 }
-.nav-item{
+
+.nav-item {
     width: 300px;
     font-size: 1.5rem;
 }
-.user {
+
+.user a {
     color: white;
-}
-.user img{
-    width: 25%;
+    text-decoration: none;
 }
 
-.headImg{
+.user img {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.headImg {
     margin-top: -1rem;
     z-index: -10;
 }
-.bgControl{
+
+.bgControl {
     border: 1px solid white;
     margin-top: -5rem;
+    z-index: 9;
 }
-#bgControl1 img{
+
+#bgControl1 img {
     width: 100%;
 }
-#bgControl2 img{
+
+#bgControl2 img {
     width: 100%;
 }
-#bgControl3 img{
+
+#bgControl3 img {
     width: 100%;
 }
-.content{
+
+.content {
     background-color: white;
-    height: 70vh;
     border-radius: 1rem;
     margin-top: -2rem;
 }
-.product{
+
+.product {
     margin-top: 5rem;
 }
-.productTitle{
+
+.productTitle {
     text-decoration: underline;
     font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
     color: rgba(60, 61, 60, 0.26);
 }
-.content img{
+
+.content img {
     width: 50%;
 }
-.content img:hover{
-    width: 100%;
-}
-.footer{
+.footer {
     margin-top: 3rem;
     background-color: #333333;
     height: 20vh;
+    width: 100%;
+}
+
+
+/* Panier */
+
+.show-cart li {
+    display: flex;
+}
+
+.card {
+    margin-bottom: 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.card-img-top {
+    width: 25%;
+    align-self: center;
+}
+
+.card a {
+    font-size: 1rem;
+    align-self: center;
+    width: 10rem;
+    height: 2rem;
+}
+
+.modal-header {
+    background-color: #A32B09;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* ----- Robin ------- */
+  .modal-body {
+    margin: 0 1rem;
+  }
+   .modal-header{
+    background-color: #B0413A;
+    color: #fff;
+  }
+  .containerInscription{
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .slideControl {
+        display: none;
+    }
+  #navLogo {
+        display: none;
+    }
+    .navbar-collapse {
+        z-index: 10;
+    }
+    .user{
+        width: 300px;
+        height: 3rem;
+        z-index: 10;
+    }
+    .header img{
+        width: 20%;
+        display: block;
+    }
+}
+    .dropdown-menu{
+      background-color: #323538;
+      z-index: 10;
+    }
+    .dropdown-menu li a{
+        text-decoration: underline;
+        color: #fff;
+        margin-left: 10px;
+    }
+    .dropdown-header{
+      color: #fff;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    /* tooltip */
+
+
+  /* ---- Odile début ---- */
+  
+  /* ----- Odile fin ----- */
 }
